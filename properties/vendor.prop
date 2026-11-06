@@ -139,7 +139,7 @@ persist.vendor.qcom.bluetooth.lossless_aptx_adaptive_le.enabled=true
 ro.bluetooth.a2dp_offload.supported=true
 
 # Camera
-ro.camera.disableHeicUltraHDR=true
+ro.camera.disableHeicUltraHDR=false
 ro.camera.enableCamera1MaxZsl=1
 ro.camera.notify_nfc=1
 ro.camerax.extensions.enabled=true
