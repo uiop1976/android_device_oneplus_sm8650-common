@@ -361,6 +361,7 @@ endif
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.multihal \
     sensors.dynamic_sensor_hal \
+    sensors.fusionlight \
     sensors.oplus
 
 PRODUCT_COPY_FILES += \
@@ -528,3 +529,8 @@ $(call inherit-product, vendor/oneplus/dolby/config.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8650-common/sm8650-common-vendor.mk)
+
+# Override sensor multihal configuration to wrap sensors.qsh.so via sensors.fusionlight.so
+PRODUCT_COPY_FILES := \
+    $(filter-out %:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf,$(PRODUCT_COPY_FILES)) \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
