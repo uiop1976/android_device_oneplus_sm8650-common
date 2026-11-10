@@ -23,6 +23,10 @@
     <!-- Doze: Ambient light sensor used by DozeScreenBrightness to drive AOD dimming scrim -->
     <string name="doze_brightness_sensor_type" translatable="false">android.sensor.light</string>
 
+    <!-- Doze: Force pure black scrim background tint so mScrimInFront never gets stuck on
+         #FFFAFAFA (light grey wallpaper main color) when transitioning from PULSING/KEYGUARD to AOD -->
+    <color name="shade_scrim_background_dark">#ff000000</color>
+
     <!-- Doze: Sensor-to-brightness lookup table (0..1000+ lux).
          On OPLUS OLED panels, oplus_ofp_backlight_filter blocks normal backlight updates in LP1,
          while hardware 2-gear switching (aod_light_mode_set: 1=aod-low 2689, 0=aod-high 3332)
