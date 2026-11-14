@@ -1923,6 +1923,12 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="vonr_setting_visibility_bool" value="false" />
         <boolean name="always_send_plmn_name_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-121" />
+            <item value="-114" />
+            <item value="-105" />
+        </int-array>
     </carrier_config>
     <carrier_config mcc="460" mnc="04">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2020,6 +2026,12 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="vonr_setting_visibility_bool" value="false" />
         <boolean name="always_send_plmn_name_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-121" />
+            <item value="-114" />
+            <item value="-105" />
+        </int-array>
     </carrier_config>
     <carrier_config mcc="460" mnc="06">
         <int name="eutran_rsrp_hysteresis_db_int" value="1" />
@@ -2311,6 +2323,12 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="vonr_setting_visibility_bool" value="false" />
         <boolean name="always_send_plmn_name_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-121" />
+            <item value="-114" />
+            <item value="-105" />
+        </int-array>
     </carrier_config>
     <carrier_config mcc="460" mnc="12">
         <boolean name="carrier_volte_available_bool" value="true" />
@@ -2350,6 +2368,12 @@
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
         <boolean name="vonr_setting_visibility_bool" value="false" />
         <boolean name="always_send_plmn_name_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-121" />
+            <item value="-114" />
+            <item value="-105" />
+        </int-array>
     </carrier_config>
     <carrier_config mcc="460" mnc="13">
         <boolean name="use_only_rsrp_for_lte_signal_bar_bool" value="true" />
@@ -2484,6 +2508,12 @@
         <boolean name="vonr_enabled_bool" value="true" />
         <boolean name="vonr_setting_visibility_bool" value="false" />
         <boolean name="hide_enhanced_4g_lte_bool" value="true" />
+        <int-array name="lte_rsrp_thresholds_int_array" num="4">
+            <item value="-126" />
+            <item value="-121" />
+            <item value="-114" />
+            <item value="-105" />
+        </int-array>
     </carrier_config>
     <carrier_config mcc="310" mnc="00">
         <boolean name="rtt_auto_upgrade_bool" value="true" />
