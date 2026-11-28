@@ -372,6 +372,7 @@ PRODUCT_PACKAGES += \
     sensors.oplus
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.ambient_temperature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.ambient_temperature.xml \
     frameworks/native/data/etc/android.hardware.sensor.barometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.barometer.xml \
@@ -535,8 +536,3 @@ $(call inherit-product, vendor/oneplus/dolby/config.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/sm8650-common/sm8650-common-vendor.mk)
-
-# Override sensor multihal configuration to wrap sensors.qsh.so via sensors.fusionlight.so
-PRODUCT_COPY_FILES := \
-    $(filter-out %:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf,$(PRODUCT_COPY_FILES)) \
-    $(LOCAL_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
